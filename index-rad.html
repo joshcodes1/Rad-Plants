@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./rad-plants.css">
     <title>Document</title>
 </head>
@@ -12,6 +13,51 @@
         <div class="logo">
             <legend>Rad Plants</legend>
         </div>
+
+        <button id="opn-btn">
+            <i onclick="opn()"  class="fa-solid fa-bars"></i>    
+        </button>
+
+        <div class="mobile-nav">
+            <button id="x-btn">
+                <i onclick="cls()" class="fa-solid fa-xmark"></i>
+            </button>
+        <div class="mobile-link">
+            <a href="">
+                <!-- <i class="fa-solid fa-house"></i> -->
+                <legend>home</legend>
+            </a>
+        </div>
+        <div class="mobile-link">
+            <a href="">
+                <!-- <i class="fa-solid fa-store"></i> -->
+                <legend>catalouge</legend>
+            </a>
+
+        </div>
+        <div class="mobile-link">
+            <a href="">
+                <!-- <i class="fa-solid fa-phone"></i> -->
+                <legend>Contact</legend>
+            </a>
+
+        </div>
+        <div class="mobile-link">
+            <a href="">
+                <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                <legend>Search</legend>
+            </a>
+
+        </div>
+        <div class="mobile-link">
+            <a href="">
+                <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                <legend>cart</legend>
+            </a>
+
+        </div>
+        </div>
+
         <div class="nav-links">
             <div class="primary-links">
                 <li><a href="">Home</a></li>
@@ -29,7 +75,7 @@
 <!-- start of main-section -->
     <div class="main-section">
         <div class="main-section-text">
-           <h1>Find perect plants <br> for your home </h1>
+           <h1>Find perfect plants <br> for your home </h1>
            <h3>Beautiful plants thats encourage <br> you to get creative.</h3>
            <br>
            <button id="shop-now-btn">SHOP NOW</button>
@@ -63,7 +109,7 @@
 
 <!-- mid text -->
         <h2 id="mid-text">
-            Love and work are to people what ater and <br> sunshine are to plants  
+            Love and work are to people what water and <br> sunshine are to plants  
         </h2>
 <!-- end of mid text -->
 
@@ -168,6 +214,17 @@
             <option value="USD">USD</option>
         </select>
     </div>
+    <script>
+        var navLinks = 
+        document.getElementsByClassName('mobile-nav');
+        var closeBtn =
+        document.getElementById('x-btn'); 
+        var openBtn =
+        document.getElementById('opn-btn');
+        openBtn.addEventListener('click',()=>{navLinks[0].style.right ='0px';})
+        closeBtn.addEventListener('click',()=>{navLinks[0].style.right ='-200px';})
+
+    </script>
 </div>
 <!-- end of footer -->
 </div> 

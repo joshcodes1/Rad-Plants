@@ -60,13 +60,13 @@ h2 {
   justify-content: space-between;
 }
 .main-section img {
-  height: 100%;
-  width: 70%;
+  height: 70vh;
+  width: 100%;
 }
 .main-section-text {
   display: block;
   padding: 10px;
-  width: 100%;
+  width: 70%;
 }
 .main-section-text button {
   padding: 10px 25px;
@@ -194,7 +194,7 @@ legend {
   background: #000;
 }
 .footer {
-  padding: 100px  50px  50px 50px;
+  padding: 100px 50px 50px 50px;
   display: flex;
   justify-content: space-between;
 }
@@ -206,4 +206,116 @@ legend {
 .footer li a {
   text-decoration: none;
   color: #000;
+}
+.mobile-nav {
+  /* display: none; */
+}
+
+@media only screen and (max-width: 600px) {
+  .mobile-nav{
+    display: block;
+    position: fixed;
+    top: 0;
+    right:-200px;
+    width: 200px;
+    padding: 20px ;
+    background-color: #292828 ;
+    box-shadow: 1px 1px 1px 1px gray;
+
+  }
+  #opn-btn{
+    border: none;
+    background-color: transparent;
+
+  }
+  #x-btn{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    position: static;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .fa-xmark{
+    font-size: 40px;
+    color: #fff;
+    top: 0;
+    right: 0;
+    position: absolute;
+  }
+  .fa-bars{
+    font-size: 50px;
+    color: #1a1919;
+    width: 100px;
+  }
+
+  .mobile-link a{
+    text-decoration: none;
+    color:#fff ;
+  }
+  .mobile-link legend{
+    padding: 30px 0;
+    text-transform: capitalize;
+  }
+  .nav-bar {
+    padding: 0 10px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .primary-links {
+    display: none;
+  }
+  .main-section {
+    text-align: center;
+    padding: 0 10px;
+    flex-direction: column;
+  }
+  .main-section-text {
+    width: 100%;
+  }
+  .main-section img {
+    width: 100%;
+    height: 50vh;
+    padding: 40px 0;
+  }
+  .category {
+    padding: 0 10px;
+    display: none;
+  }
+  #mid-text{
+    padding: 0 10px;
+
+  }
+  .featured {
+    padding: 0 10px;
+    flex-direction: column;
+  }
+  .featured-text{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+
+
+  }
+  .featured-plants{
+    padding-bottom: 70px;
+    width: 100%;
+  }
+  .more-info {
+    padding: 0 10px;
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+  .subscribe{
+    padding: 70px 0;
+  }
+  .footer{
+    padding-bottom: 50px;
+    padding-top: 250px;
+    padding: 0 10px;
+  }
+  
 }
