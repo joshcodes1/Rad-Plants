@@ -100,6 +100,31 @@
             <legend>indoor plants</legend>
         </div>
     </div>
+
+    <!-- mobile category start -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img class="slide-imgs" src="./images/7e02caa2791cbd5a598e6299e4270765.jpg"/>
+          <legend>outdoor plants</legend>
+        </div>
+  
+        <div class="mySlides fade">
+          <img class="slide-imgs" src="./images/0f2540be472e508fe6d095ff670769da.jpg"/>
+          <legend>bedroom plants</legend>
+        </div>
+  
+        <div class="mySlides fade">
+          <img class="slide-imgs" src="./images/3fdebda3d796b27a2df3d5aaed6eff8c.jpg"/>
+          <legend>indoor plants</legend>
+        </div>
+        
+        <div style="text-align: center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+      </div>
+      <!-- mobile category end -->
 <!-- end of plants category -->
 
 <!-- mid text -->
@@ -135,7 +160,9 @@
                 <legend>150$</legend>
             </div>
         </div>
-    </div>     
+    </div>   
+    
+    
 <!-- end of featured -->
 
 <!-- some plants info -->
@@ -218,7 +245,30 @@
         document.getElementById('opn-btn');
         openBtn.addEventListener('click',()=>{navLinks[0].style.right ='0px';})
         closeBtn.addEventListener('click',()=>{navLinks[0].style.right ='-200px';})
+        
+    
+      let slideIndex = 0;
+      showSlides();
 
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 3000);
+      }
+    
     </script>
 </div>
 <!-- end of footer -->
