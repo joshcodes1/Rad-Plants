@@ -286,42 +286,39 @@ legend {
 @media only screen and (max-width: 600px) {
   .mobile-nav {
     display: block;
-    position: fixed;
+    z-index: 1;
+    position:fixed;
     top: 0;
     right: -200px;
+    transition: ease-in-out 0.5s;
     width: 200px;
     padding: 20px;
-    background-color: #292828;
+    background-color: #059033;
     box-shadow: 1px 1px 1px 1px gray;
   }
+  .fa-xmark{
+    position: absolute;
+    top: 10px;
+    color: #fff;
+    right: 10px;
+  }
   #opn-btn {
+    display: block;
     border: none;
     background-color: transparent;
   }
   #x-btn {
+    display: block;
     background-color: transparent;
     border: none;
     padding: 0;
     position: static;
     top: 0;
-    right: 0;
+    right: 10px;
     bottom: 0;
   }
-
-  .fa-xmark {
-    font-size: 40px;
-    color: #fff;
-    top: 0;
-    right: 0;
-    position: absolute;
-  }
-  .fa-bars {
-    font-size: 50px;
-    color: #1a1919;
-    width: 100px;
-  }
-
   .mobile-link a {
+    text-align: center;
     text-decoration: none;
     color: #fff;
   }
