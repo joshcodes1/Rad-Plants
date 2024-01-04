@@ -372,8 +372,17 @@ legend {
     padding-bottom: 50px;
   }
   .featured-plants {
+    display: block;
+    
     padding-bottom: 70px;
     width: 100%;
+  }
+  .featured_plants{
+    margin: 60px 0;
+    
+  }
+  .featured_plants img{
+    height: 30vh;
   }
   .more-info {
     padding: 0 10px;
@@ -383,9 +392,15 @@ legend {
   .subscribe {
     padding: 70px 0;
   }
+  .subscribe input{
+    width: 50%;
+  }
   .footer {
     padding-bottom: 50px;
     padding-top: 250px;
     padding: 0 10px;
+  }
+  .footer .logo{
+    display: none;
   }
 }
